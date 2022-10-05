@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}Lucas Rodrigues{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/cv.css') }}">
+{% endblock %}
+
+{% block content %}
+<header class="flex-row space-between">
+    <div class="flex-rev-col align-left justify-bottom">
+        <div>+55 11 95647-8094</div>
+        <div>São Paulo, Brazil (GMT-3)</div>
+    </div>
+    <div class="flex-column align-center">
+        <div class="text-center name">Lucas Rodrigues</div>
+        <div class="text-center title">Software Engineer</div>
+    </div>
+    <div class="flex-rev-column align-right">
+        <div class="flex-col align-right">
+            <a href="mailto:cv@lucas.rs">
+                cv@lucas.rs
+            </a>
+        </div>
+        <div class="flex-col align-right">
+            <a href="https://github.com/plutaniano">
+                github.com/plutaniano
+            </a>
+        </div>
+        <div class="flex-col align-right">
+            <a href="https://linkedin.com/in/lucasrs01">
+                linkedin.com/in/lucasrs01
+            </a>
+        </div>
+    </div>
+</header>
+<div class="divider"></div>
+conteúdo aqui
+<div class="divider"></div>
+<section class="flex-column align-left">
+    <div class="bold upper">Professional Experience</div>
+    <div class="divider"></div>
+    <div class="flex-column align-left full-width">
+        <div class="flex-row space-between full-width">
+            <div class="flex-column align-left">
+                <div class="bold">Full Stack Software Engineer</div>
+                <div class="italic">Blue3 Investimentos</div>
+            </div>
+            <div class="flex-column align-right">
+                <div class="bold">Feb 2021 - present</div>
+                <div class="location">São Paulo, Brazil</div>
+            </div>
+        </div>
+        <ul>
+            <li>{entry}</li>
+            <li>{entry}</li>
+            <li>{entry}</li>
+            <li>{entry}</li>
+        </ul>
+    </div>
+    <div class="flex-column align-left full-width">
+        <div class="flex-row space-between full-width">
+            <div class="flex-column align-left">
+                <div class="bold">Full Stack Software Engineer</div>
+                <div class="italic">Maestro Investimentos</div>
+            </div>
+            <div class="flex-column align-right">
+                <div class="bold">Feb 2021 - present</div>
+                <div class="location">São Paulo, Brazil</div>
+            </div>
+        </div>
+        <ul>
+            <li>{entry}</li>
+            <li>{entry}</li>
+            <li>{entry}</li>
+            <li>{entry}</li>
+        </ul>
+    </div>
+</section>
+{% endblock %}
